@@ -47,7 +47,10 @@
 	add_action('wp_enqueue_scripts', 'wp_ulike_enqueue_style');
 	
 	function wp_ulike_enqueue_style() {
-		wp_enqueue_style( 'wp-ulike', plugins_url('assets/css/wp-ulike.min.css', dirname(__FILE__)) );
+		if ( apply_filters( 'wp_ulike_use_css', true ) ) {
+			wp_enqueue_style( 'wp-ulike', plugins_url('assets/css/wp-ulike.min.css', dirname(__FILE__)) );
+		}
+
 		//add your custom style from setting panel.
 		wp_add_inline_style( 'wp-ulike', wp_ulike_get_custom_style() );
 	}

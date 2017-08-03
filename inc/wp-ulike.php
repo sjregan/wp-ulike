@@ -195,7 +195,7 @@
 			"key" 		=> '_activityliked',		//meta key
 			"cookie" 	=> 'activity-liked-'		//Cookie Name
 		);	
-	
+
 		//call wp_get_ulike function from class-ulike calss
 		$counter 		= $wp_ulike_class->wp_get_ulike($data);
 		

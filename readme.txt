@@ -238,6 +238,11 @@ define( 'WP_MEMORY_LIMIT', '256M' );
 
 == Changelog ==
 
+= 3.0 =
+* Added: 'wp_ulike_template' filter to support custom button templates
+* Added: 'wp_ulike_use_css' filter to allow disabling of CSS
+* Updated: Modified AJAX result and rendering to support custom button templates
+
 = 2.7 =
 * Added: Flexible google rich snippets for posts. (Add rich snippet for likes in form of schema.org)
 * Added: 'wp_ulike_count_box_template' filter to customize count box template.
